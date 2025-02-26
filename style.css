@@ -19,11 +19,24 @@ ul {
 }
 
 ul li {
+	text-transform: uppercase;
 	color: #fff;
 	font-size: 30px;
+	position: relative;
 }
-ul li:hover {
-	text-decoration: underline;
+ul li::after{
+	position: absolute;
+	left: 50%;
+	display: block;
+	content: "";
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	height: 2px;
+	width: 0;
+	background-color: #fff;
+}
+ul li:hover::after {
+	width: 100%;
+	left: 0;
 }
 
 
