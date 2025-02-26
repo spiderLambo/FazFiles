@@ -15,14 +15,15 @@ body {
 ul {
 	display:flex;
 	list-style-type: none;
-	justify-content: space-around;
+	justify-content: flex-start;
+	gap: 5vw;
 }
 
 ul li {
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 30px;
 	position: relative;
+	color: #fff;
+	font-size: 5vh;
+	text-transform: uppercase;
 }
 ul li::after{
 	position: absolute;
@@ -30,8 +31,7 @@ ul li::after{
 	display: block;
 	content: "";
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	height: 2px;
-	width: 0;
+	height: 2px; width: 0;
 	background-color: #fff;
 }
 ul li:hover::after {
@@ -46,4 +46,5 @@ h1 {
 	top: 50%; left: 50%;
 	translate: -50% -50%;
 	color: whitesmoke;
+	font-size: 30vh;
 }
