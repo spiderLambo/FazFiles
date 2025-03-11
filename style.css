@@ -20,8 +20,7 @@ body {
 ul {
 	display:flex;
 	list-style-type: none;
-	justify-content: flex-start;
-	gap: 5vw;
+	justify-content: space-around;
 }
 
 ul li {
