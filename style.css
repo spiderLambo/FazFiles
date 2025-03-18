@@ -13,9 +13,18 @@
 }
 
 body {
-	background: linear-gradient(90deg, rgba(29, 29, 30, 0.5) 0%,
-							rgba(29, 29, 30, 0) 100%),
-		          red ;/*modifier la dernière valeur pour mettre une image*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    background: linear-gradient(90deg, rgba(29, 29, 30, 0.5) 0%, rgba(29, 29, 30, 0) 100%),
+                center / contain url('../images/blackEye.jpg'), black; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 
@@ -58,7 +67,7 @@ h1{
 	position: absolute;
 	top: 50%; left: 50%;
 	translate: -50% -50%;
-	font-size: 50vh;
+	font-size: 30vh;
 	font-family: 'FNAFFont', sans-serif;
 	animation: glitch 1s linear infinite;
 }
