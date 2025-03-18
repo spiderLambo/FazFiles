@@ -13,9 +13,12 @@
 }
 
 body {
-	background: linear-gradient(90deg, rgba(29, 29, 30, 0.5) 0%,
-							rgba(29, 29, 30, 0) 100%),
-		          red ;/*modifier la dernière valeur pour mettre une image*/
+	min-height: 100vh;
+    background: linear-gradient(90deg, rgba(29, 29, 30, 0.5) 0%, rgba(29, 29, 30, 0) 100%),
+                center / contain url('../images/background.gif'), black; 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 
@@ -56,9 +59,9 @@ ul li:hover::after {
 h1{
 	color: #fff;
 	position: absolute;
-	top: 50%; left: 50%;
-	translate: -50% -50%;
-	font-size: 50vh;
+	top: 50%; right: 40%;
+	translate: 0 -50%;
+	font-size: 30vh;
 	font-family: 'FNAFFont', sans-serif;
 	animation: glitch 1s linear infinite;
 }
