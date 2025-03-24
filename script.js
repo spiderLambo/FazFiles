@@ -1,4 +1,4 @@
-const allLi = document.querySelectorAll("li");
+const allLi = document.getElementsByClassName("navbarTitle");
 const body = document.body;
 let camSound = new Audio("./sound/openCamera.mp3");
 

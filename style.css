@@ -40,19 +40,19 @@ header{
 	padding: 2vh;
 }
 
-ul {
+nav ul {
 	display:flex;
 	list-style-type: none;
 	justify-content: space-around;
 }
-ul li {
+.navbarTitle {
 	position: relative;
 	color: #fff;
 	font-size: 5vh;
 	text-transform: uppercase;
 	font-family: 'NavbarFont', sans-serif;
 }
-ul li::after{
+.navbarTitle::after{
 	position: absolute;
 	left: 50%;
 	display: block;
@@ -61,7 +61,7 @@ ul li::after{
 	height: 2px; width: 0;
 	background-color: #fff;
 }
-ul li:hover::after {
+.navbarTitle:hover::after {
 	width: 100%;
 	left: 0;
 }
@@ -69,7 +69,7 @@ ul li:hover::after {
 
 
 /* Title */
-h1{
+#FazFiles {
 	color: #fff;
 	position: absolute;
 	top: 50%; left: 50%;
@@ -78,18 +78,18 @@ h1{
 	font-family: 'FNAFFont', sans-serif;
 	animation: glitch 1s linear infinite;
 }
-h1:before,
-h1:after{
+#FazFiles:before,
+#FazFiles:after {
 	content: attr(title);
 	position: absolute;
 	left: 0;
 }
-h1:before{
+#FazFiles:before {
 	animation: glitchTop 1s linear infinite;
 	clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
-h1:after{
+#FazFiles:after {
 	animation: glitchBotom 1.5s linear infinite;
 	clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 	-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
