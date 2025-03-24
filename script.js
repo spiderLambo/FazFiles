@@ -1,17 +1,17 @@
-const allLi = document.getElementsByClassName("navbarTitle");
+const allTitles = document.querySelectorAll(".navbarTitle");
 const body = document.body;
 let camSound = new Audio("./sound/openCamera.mp3");
 
-allLi.forEach((li) => {
-  li.addEventListener("click", () => {
+allTitles.forEach((title) => {
+  title.addEventListener("click", () => {
     camSound.play();
   });
 
-  li.addEventListener("mouseenter", () => {
+  title.addEventListener("mouseenter", () => {
     body.classList.add("hovered");
   });
 
-  li.addEventListener("mouseleave", () => {
+  title.addEventListener("mouseleave", () => {
     body.classList.remove("hovered");
   });
 });
