@@ -45,12 +45,14 @@ nav ul {
 	list-style-type: none;
 	justify-content: space-around;
 }
+li {
+	color: #fff;
+	font-family: 'NavbarFont', sans-serif;
+}
 .navbarTitle {
 	position: relative;
-	color: #fff;
 	font-size: 5vh;
 	text-transform: uppercase;
-	font-family: 'NavbarFont', sans-serif;
 }
 .navbarTitle::after{
 	position: absolute;
@@ -64,6 +66,12 @@ nav ul {
 .navbarTitle:hover::after {
 	width: 100%;
 	left: 0;
+}
+.navbarTitle + ul{
+	display: flex;
+	flex-direction: column;
+	height: 100%; width: 100%;
+	background: rebeccapurple;
 }
 
 
